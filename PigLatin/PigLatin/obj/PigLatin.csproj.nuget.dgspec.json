@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\ManyMethods\\ManyMethods\\ManyMethods.csproj": {}
+    "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\PigLatin\\PigLatin\\PigLatin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\ManyMethods\\ManyMethods\\ManyMethods.csproj": {
+    "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\PigLatin\\PigLatin\\PigLatin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\ManyMethods\\ManyMethods\\ManyMethods.csproj",
-        "projectName": "ManyMethods",
-        "projectPath": "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\ManyMethods\\ManyMethods\\ManyMethods.csproj",
+        "projectUniqueName": "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\PigLatin\\PigLatin\\PigLatin.csproj",
+        "projectName": "PigLatin",
+        "projectPath": "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\PigLatin\\PigLatin\\PigLatin.csproj",
         "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\ManyMethods\\ManyMethods\\obj\\",
+        "outputPath": "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\PigLatin\\PigLatin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
