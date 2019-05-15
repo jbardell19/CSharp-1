@@ -32,24 +32,36 @@ namespace RockPaperScissors
             if (Guess2 == 0 && RandomNumber == 0)
             {
                 Console.WriteLine("It's a tie both the computer and you chose Rock!");
-                //if (RandomNumber == Guess2)
-                //{
-                //    Console.WriteLine("it is a tie!");
-                //}
+                if (Guess2 == 1 && RandomNumber == 0)
+                {
+                     Console.WriteLine("You win! Paper beats rock!");                    
+                }
+                else if (Guess2 == 2 && RandomNumber == 0)
+                {
+                    Console.WriteLine("Sorry you lose.  Computer chose rock.  Rock beats scissors");
+                }
             }
-            //if (Guess2 == 1 && )
-            //{
+            else if (Guess2 == 1 && RandomNumber == 1)
+            {
+                Console.WriteLine("It's a tie both the computer and you chose Paper!");
+                if (Guess2 == 0 && RandomNumber == 1)
+                {
+                    Console.WriteLine("You Lose! Paper beats rock!");
+                }
                 
-            //}
-            //if (Guess2 == 2 )
-            //{
-                
-            //}
-            //else
-            //{
-                
-                
-            //}
+            }
+            else if (Guess2 == 2 && RandomNumber == 2)
+            {
+                Console.WriteLine("It's a tie both the computer and you chose Scissors");
+                if (Guess2 == 2 && RandomNumber == 0)
+                {
+                    Console.WriteLine("You lose.  R");
+                }
+                else if (Guess2 == 2 && RandomNumber == 0)
+                {
+                    Console.WriteLine("Sorry you lose.  Computer chose rock.  Rock beats scissors");
+                }
+            }
 
         }
     }
