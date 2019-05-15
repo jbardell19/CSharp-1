@@ -46,9 +46,10 @@ namespace RockPaperScissors
                 Console.WriteLine("It's a tie both the computer and you chose Paper!");
                 if (Guess2 == 0 && RandomNumber == 1)
                 {
-                    Console.WriteLine("You Lose! Paper beats rock!");
+                    Console.WriteLine("Computer chose paper you lose.");
                 }
-                
+
+
             }
             else if (Guess2 == 2 && RandomNumber == 2)
             {
