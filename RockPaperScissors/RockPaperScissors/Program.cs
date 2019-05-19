@@ -10,60 +10,77 @@ namespace RockPaperScissors
         static void Main(string[] args)
         {
             Console.WriteLine("Let's play Rock, Paper, Scissors!  ");
-            Console.WriteLine("Please enter 0 for Rock");
-            Console.WriteLine("Please enter 1 for Paper: ");
-            Console.WriteLine("Please enter 2 for Scissors: ");
+            Console.WriteLine("Please enter rock, payer or scissors: ");
+            
             //takes input from user and assigns it to guess variable
             string Guess = Console.ReadLine();
-            //guess variable is lowered to all lowercase
-            int Guess2 = Convert.ToInt32(Guess);
-            RockPaperScissor(Guess2);
+            RockPaperScissor(Guess);
             
         }
 
-        public static void RockPaperScissor(int Guess2)
+        public static void RockPaperScissor(string Guess)
         {
             // new random method for generating a number
             Random generator = new Random();
             //creates a number 0, 1 or 2
             int RandomNumber = generator.Next(0, 3);
-
-
-            if (Guess2 == 0 && RandomNumber == 0)
+            
+            if (RandomNumber == 0)
             {
-                Console.WriteLine("It's a tie both the computer and you chose Rock!");
-                if (Guess2 == 1 && RandomNumber == 0)
+                if (Guess == "rock")
                 {
-                     Console.WriteLine("You win! Paper beats rock!");                    
+                    Console.WriteLine("Computer Chose Rock");
+                    Console.WriteLine("It's a TIE");
                 }
-                else if (Guess2 == 2 && RandomNumber == 0)
+                else if (Guess == "paper")
                 {
-                    Console.WriteLine("Sorry you lose.  Computer chose rock.  Rock beats scissors");
+                    Console.WriteLine("Computer Chose Rock");
+                    Console.WriteLine("You WIN, Paper beats Rock");
+                }
+
+                else if (Guess == "scissors")
+                {
+                    Console.WriteLine("Computer Chose Rock");
+                    Console.WriteLine("Sorry you LOSE, Rock beats Scissors");
                 }
             }
-            else if (Guess2 == 1 && RandomNumber == 1)
+            else if (RandomNumber == 1)
             {
-                Console.WriteLine("It's a tie both the computer and you chose Paper!");
-                if (Guess2 == 0 && RandomNumber == 1)
+                if (Guess == "rock")
                 {
-                    Console.WriteLine("Computer chose paper you lose.");
+                    Console.WriteLine("Computer chose Paper");
+                    Console.WriteLine("Sorry you LOSE, Paper beat Rock");
                 }
-
-
-            }
-            else if (Guess2 == 2 && RandomNumber == 2)
-            {
-                Console.WriteLine("It's a tie both the computer and you chose Scissors");
-                if (Guess2 == 2 && RandomNumber == 0)
+                else if (Guess == "paper")
                 {
-                    Console.WriteLine("You lose.  R");
+                    Console.WriteLine("Computer chose Paper");
+                    Console.WriteLine("It's a TIE");
                 }
-                else if (Guess2 == 2 && RandomNumber == 0)
+                else if (Guess == "scissors")
                 {
-                    Console.WriteLine("Sorry you lose.  Computer chose rock.  Rock beats scissors");
+                    Console.WriteLine("Computer chose Paper");
+                    Console.WriteLine("You WIN, Scissors beats Paper");
                 }
             }
+            else if (RandomNumber == 2)
+            {
+                if (Guess == "rock")
+                {
+                    Console.WriteLine("Computer chose Scissors");
+                    Console.WriteLine("You WIN, Rock beats Scissors");
+                }
+                else if (Guess == "paper")
+                {
+                    Console.WriteLine("Computer chose Scissors");
+                    Console.WriteLine("Sorry you LOSE, Scissors beats Paper");
+                }
+                else if (Guess == "scissors")
+                {
+                    Console.WriteLine("Computer chose Scissors");
+                    Console.WriteLine("It's a TIE");
+                }
 
+            }
         }
     }
 }
