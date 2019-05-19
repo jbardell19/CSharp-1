@@ -10,7 +10,7 @@ namespace RockPaperScissors
         static void Main(string[] args)
         {
             Console.WriteLine("Let's play Rock, Paper, Scissors!  ");
-            Console.WriteLine("Please enter rock, payer or scissors: ");
+            Console.WriteLine("Please enter rock, paper or scissors: ");
             
             //takes input from user and assigns it to guess variable
             string Guess = Console.ReadLine();
