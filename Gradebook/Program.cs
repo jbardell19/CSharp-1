@@ -29,9 +29,10 @@ namespace Gradebook
             while (StudentName.ToLower() != "quit")
             {
                 
-                Console.WriteLine("Enter students grades seperated by spaces: ");
+                Console.WriteLine("Enter students grades seperated by spaces then hit enter: ");
                 string Grades = Console.ReadLine();
-                Gradebook.Add(StudentName, Grades);
+                
+                //Gradebook.Add(StudentName, Grades);
                 //If the user enters a students name, your program should then ask the user to enter the students grades 
                 //    as single string separated by spaces("100 90 78 101 45 81")
                

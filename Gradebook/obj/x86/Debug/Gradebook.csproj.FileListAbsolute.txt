@@ -1,0 +1,6 @@
+C:\Users\Matt\Desktop\CSharp\CSharp\Gradebook\obj\x86\Debug\Gradebook.csprojAssemblyReference.cache
+C:\Users\Matt\Desktop\CSharp\CSharp\Gradebook\obj\x86\Debug\Gradebook.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Desktop\CSharp\CSharp\Gradebook\bin\Debug\Gradebook.exe
+C:\Users\Matt\Desktop\CSharp\CSharp\Gradebook\bin\Debug\Gradebook.pdb
+C:\Users\Matt\Desktop\CSharp\CSharp\Gradebook\obj\x86\Debug\Gradebook.exe
+C:\Users\Matt\Desktop\CSharp\CSharp\Gradebook\obj\x86\Debug\Gradebook.pdb
