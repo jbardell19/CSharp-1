@@ -1,0 +1,6 @@
+C:\Users\Matt\Desktop\CSharp\CSharp\MasterMind\bin\Debug\MasterMind.exe
+C:\Users\Matt\Desktop\CSharp\CSharp\MasterMind\bin\Debug\MasterMind.pdb
+C:\Users\Matt\Desktop\CSharp\CSharp\MasterMind\obj\x86\Debug\MasterMind.csprojAssemblyReference.cache
+C:\Users\Matt\Desktop\CSharp\CSharp\MasterMind\obj\x86\Debug\MasterMind.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Desktop\CSharp\CSharp\MasterMind\obj\x86\Debug\MasterMind.exe
+C:\Users\Matt\Desktop\CSharp\CSharp\MasterMind\obj\x86\Debug\MasterMind.pdb
