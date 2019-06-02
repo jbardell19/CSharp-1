@@ -40,8 +40,6 @@ namespace Gradebook
             foreach (var i in Gradebook.Keys)
             {
                 StudentName = i;
-                //GradeArray = Gradebook[i];
-
                 IntGradeArray = Array.ConvertAll(Gradebook[i], Convert.ToInt32);
                 LowestGrade = IntGradeArray.Min();
                 HighestGrade = IntGradeArray.Max();
@@ -54,18 +52,8 @@ namespace Gradebook
                 Console.ReadLine();
             }
 
-
-            //If the user enters a students name, your program should then ask the user to enter the students grades 
-            //    as single string separated by spaces("100 90 78 101 45 81")
-
-
-
-            //foreach (var student in Gradebook.Keys)
-            //{
-
-            //}
         }
 
     }
-    }
+}
 
