@@ -26,15 +26,13 @@ namespace Gradebook
 
                 Console.WriteLine("Enter students grades seperated by spaces then hit enter: ");
                 string Grades = Console.ReadLine();
-                Gradebook.Add(StudentName, Grades);
+                Gradebook.Add(StudentName, Grades.Split(' '));
                 Console.WriteLine("Enter student's name or type quit: ");
                 StudentName = Console.ReadLine().ToLower();
             }
 
             //and print out the name of the student, their lowest, highest and average grade.
-            
-            string StudentGrades;
-            string[] GradeArray;
+
             int[] IntGradeArray;
             int LowestGrade;
             int HighestGrade;
@@ -42,20 +40,18 @@ namespace Gradebook
             foreach (var i in Gradebook.Keys)
             {
                 StudentName = i;
-                StudentGrades = Gradebook.Grades[i];
-                GradeArray = StudentGrades.Split(' ');
+                //GradeArray = Gradebook[i];
 
-                IntGradeArray = Array.ConvertAll(GradeArray, Convert.ToInt32);
+                IntGradeArray = Array.ConvertAll(Gradebook[i], Convert.ToInt32);
                 LowestGrade = IntGradeArray.Min();
                 HighestGrade = IntGradeArray.Max();
                 double Average = IntGradeArray.Average();
 
-                Console.WriteLine(StudentName +  " ");
+                Console.WriteLine(StudentName + " ");
                 Console.WriteLine(StudentName + " lowest grade is: " + LowestGrade);
                 Console.WriteLine(StudentName + " highest grade is: " + HighestGrade);
                 Console.WriteLine(StudentName + " average grade is: " + Average);
-
-
+                Console.ReadLine();
             }
 
 
