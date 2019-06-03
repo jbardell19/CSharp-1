@@ -19,18 +19,34 @@ namespace TowersOfHanoi
             {
                 Towers["A"].Push(i);
             }
-            Console.ReadLine();
+            BoardPrint();
+            Console.ReadLine();   
+        }
+        public static void PrintStackTower(Stack<int> stack)
+        {
+            int[] arrTower = stack.ToArray();
+            
 
+            for (int j = arrTower.Length - 1; j >= 0; j--)
+            {
+                Console.Write(arrTower[j] + " ");
+            }
 
-
-
+        }
+        public static void BoardPrint()
+        {
+            foreach (var key in Towers.Keys) // goes through each key in the stack and prints it out with a colon afterward  then one more writeline for spacing
+            {
+                Console.Write(key + ": ");
+                PrintStackTower(Towers[key]);
+                Console.WriteLine();
+            }
         }
         //public static void GameMoves();
         //{
 
         //}
-        //public static void PrintStacks();
-        //{
+        
 
         //}
         //public static void BoardPrint();
@@ -39,7 +55,7 @@ namespace TowersOfHanoi
         //}
         //public static bool MoveLegality();
         //{
-        
+
         //}
     }
 }
