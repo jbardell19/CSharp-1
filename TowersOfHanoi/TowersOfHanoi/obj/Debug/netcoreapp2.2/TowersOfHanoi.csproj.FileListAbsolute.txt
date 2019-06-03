@@ -1,0 +1,11 @@
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\bin\Debug\netcoreapp2.2\TowersOfHanoi.deps.json
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\bin\Debug\netcoreapp2.2\TowersOfHanoi.runtimeconfig.json
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\bin\Debug\netcoreapp2.2\TowersOfHanoi.runtimeconfig.dev.json
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\bin\Debug\netcoreapp2.2\TowersOfHanoi.dll
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\bin\Debug\netcoreapp2.2\TowersOfHanoi.pdb
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\obj\Debug\netcoreapp2.2\TowersOfHanoi.csprojAssemblyReference.cache
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\obj\Debug\netcoreapp2.2\TowersOfHanoi.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\obj\Debug\netcoreapp2.2\TowersOfHanoi.AssemblyInfoInputs.cache
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\obj\Debug\netcoreapp2.2\TowersOfHanoi.AssemblyInfo.cs
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\obj\Debug\netcoreapp2.2\TowersOfHanoi.dll
+C:\Users\Matt\Desktop\CSharp\CSharp\TowersOfHanoi\TowersOfHanoi\obj\Debug\netcoreapp2.2\TowersOfHanoi.pdb

@@ -4,12 +4,43 @@ using System.Collections.Generic;
 
 namespace TowersOfHanoi
 {
-    class Program
+    class MainClass
     {
+
+        static Dictionary<String, Stack<int>> Towers = new Dictionary<string, Stack<int>>();
+
         static void Main(string[] args)
         {
-            static Dictionary<String, Stack<int>> Towers = new Dictionary<string, Stack<int>>();
-                }
+            Towers.Add("A", new Stack<int>());
+            Towers.Add("B", new Stack<int>());
+            Towers.Add("C", new Stack<int>());
+
+            for(var i = 1; i > 5; i++)
+            {
+                Towers["A"].Push(i);
+            }
+            Console.ReadLine();
+
+
+
+
+        }
+        //public static void GameMoves();
+        //{
+
+        //}
+        //public static void PrintStacks();
+        //{
+
+        //}
+        //public static void BoardPrint();
+        //{
+
+        //}
+        //public static bool MoveLegality();
+        //{
+        
+        //}
     }
 }
 
