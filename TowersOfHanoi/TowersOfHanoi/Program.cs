@@ -8,60 +8,77 @@ namespace TowersOfHanoi
     {
 
         static Dictionary<String, Stack<int>> Towers = new Dictionary<string, Stack<int>>();
-
+        public static int StackCounter = 0;
         static void Main(string[] args)
         {
             Towers.Add("A", new Stack<int>());
             Towers.Add("B", new Stack<int>());
             Towers.Add("C", new Stack<int>());
 
-            for(var i = 1; i > 5; i++)
+            for(var i = 4; i > 0; i--)
             {
                 Towers["A"].Push(i);
             }
             while (Towers["B"].Count != 4 || Towers["C"].Count != 4)
             {
                 BoardPrint();//Reprints the board after move
-                //GameMoves();
+                GameMoves();
             }
             Console.ReadLine();   
         }
-        public static void PrintStackTower(Stack<int> stack)
-        {
-            int[] TowerArray = stack.ToArray();
-            // new int[] TowerArray for the stack
-            
-            
-            for (int i = TowerArray.Length - 1; i >= 0; i--)
-            {
-                Console.Write(TowerArray[i] + " ");
-            }
-
-        }
         public static void BoardPrint()
         {
-            foreach (var key in Towers.Keys) // goes through each key in the stack and prints it out with a colon afterward  then one more writeline for spacing
+            foreach (var key in Towers.Keys) // goes through each key in the stack and prints it out with a colon afterward then one more writeline for spacing
             {
                 Console.Write(key + ": ");
                 PrintStackTower(Towers[key]);
                 Console.WriteLine();
             }
         }
-        //public static void GameMoves();
-        //{
+        //Function to move from one tower to another; ask user then push pop not to be confused with puddin pop
+        public static void GameMoves()
+        {
+            Console.WriteLine("Which tower do you want to move from? Please choose A B or C");
+            string StarterStack = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Which tower do you want to move to? Please choose A B or C");
+            string DestStack = Console.ReadLine();
+            Console.WriteLine();
+            if (AbleToMove(StarterStack, DestStack))
+            {
+                //Move to the DestinationStack
+                Towers[DestStack].Push(Towers[StarterStack].Peek());
+                Towers[DestStack].Pop();
 
-        //}
-        
+            }
+            //for each move, need to remove from current stack add to new stack 
 
-        //}
-        //public static void BoardPrint();
-        //{
+        }
+        public static void PrintStackTower(Stack<int> stack)
+        {
+            int[] TowerArray = stack.ToArray();
+            // new int[] TowerArray for the stack
 
-        //}
-        //public static bool MoveLegality();
-        //{
 
-        //}
+            for (int i = TowerArray.Length - 1; i >= 0; i--)
+            {
+                Console.Write(TowerArray[i] + " ");
+            }
+
+        }
+        //Below checks if you are able to make the move
+        public static bool AbleToMove(string Starter, string Dest) // This checks if you can make the move or not.  You cannot put a bigger one on a smaller one.
+        {
+            if (Towers[Starter].Count != 0 && (Towers[Dest].Count == 0 || Towers[Starter].Peek() < Towers[Dest].Peek()))
+            {
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("You cannot make that move.");
+                return false;
+            }
+        }
     }
 }
 
