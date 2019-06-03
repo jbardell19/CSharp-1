@@ -48,7 +48,7 @@ namespace TowersOfHanoi
             {
                 //Move to the DestinationStack
                 Towers[DestStack].Push(Towers[StarterStack].Peek());
-                Towers[DestStack].Pop();
+                Towers[StarterStack].Pop();
 
             }
             //for each move, need to remove from current stack add to new stack 
@@ -60,9 +60,9 @@ namespace TowersOfHanoi
             // new int[] TowerArray for the stack
 
 
-            for (int i = TowerArray.Length - 1; i >= 0; i--)
+            for (int z = TowerArray.Length - 1; z >= 0; z--)
             {
-                Console.Write(TowerArray[i] + " ");
+                Console.Write(TowerArray[z] + " ");
             }
 
         }
