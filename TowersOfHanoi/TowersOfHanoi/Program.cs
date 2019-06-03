@@ -23,6 +23,14 @@ namespace TowersOfHanoi
             {
                 BoardPrint();//Reprints the board after move
                 GameMoves();
+                if (WinCondition())
+                {
+                    Console.WriteLine("Congrats you are smarter than you look!");
+                }
+                else
+                {
+                    continue;
+                }
             }
             Console.ReadLine();   
         }
@@ -76,6 +84,21 @@ namespace TowersOfHanoi
             else
             {
                 Console.WriteLine("You cannot make that move.");
+                return false;
+            }
+        }
+        public static bool WinCondition()
+        {
+            if (Towers["C"].Count == 4)
+            {
+                return true;
+            }
+            else if (Towers["B"].Count == 4)
+            {
+                return true;
+            }
+            else
+            {
                 return false;
             }
         }
