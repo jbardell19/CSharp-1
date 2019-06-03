@@ -19,17 +19,22 @@ namespace TowersOfHanoi
             {
                 Towers["A"].Push(i);
             }
-            BoardPrint();
+            while (Towers["B"].Count != 4 || Towers["C"].Count != 4)
+            {
+                BoardPrint();//Reprints the board after move
+                //GameMoves();
+            }
             Console.ReadLine();   
         }
         public static void PrintStackTower(Stack<int> stack)
         {
-            int[] arrTower = stack.ToArray();
+            int[] TowerArray = stack.ToArray();
+            // new int[] TowerArray for the stack
             
-
-            for (int j = arrTower.Length - 1; j >= 0; j--)
+            
+            for (int i = TowerArray.Length - 1; i >= 0; i--)
             {
-                Console.Write(arrTower[j] + " ");
+                Console.Write(TowerArray[i] + " ");
             }
 
         }
