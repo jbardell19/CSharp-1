@@ -20,3 +20,14 @@ C:/Users/Matt/Desktop/C-Sharp-Programs/CSharp/ManyMethods/ManyMethods/ManyMethod
 /Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/ManyMethods/bin/Debug/netcoreapp2.2/ManyMethods.runtimeconfig.dev.json
 /Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/ManyMethods/bin/Debug/netcoreapp2.2/ManyMethods.dll
 /Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/ManyMethods/bin/Debug/netcoreapp2.2/ManyMethods.pdb
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/bin/Debug/netcoreapp2.2/ManyMethods.deps.json
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/bin/Debug/netcoreapp2.2/ManyMethods.runtimeconfig.json
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/bin/Debug/netcoreapp2.2/ManyMethods.runtimeconfig.dev.json
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/bin/Debug/netcoreapp2.2/ManyMethods.dll
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/bin/Debug/netcoreapp2.2/ManyMethods.pdb
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/obj/Debug/netcoreapp2.2/ManyMethods.csprojAssemblyReference.cache
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/obj/Debug/netcoreapp2.2/ManyMethods.csproj.CoreCompileInputs.cache
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/obj/Debug/netcoreapp2.2/ManyMethods.AssemblyInfoInputs.cache
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/obj/Debug/netcoreapp2.2/ManyMethods.AssemblyInfo.cs
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/obj/Debug/netcoreapp2.2/ManyMethods.dll
+/Users/MC/Documents/CSharp/CSharp/ManyMethods/ManyMethods/obj/Debug/netcoreapp2.2/ManyMethods.pdb

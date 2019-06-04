@@ -1,14 +1,17 @@
 ﻿<Properties StartupConfiguration="{A7C9AF0D-2928-46C4-8A09-A31958CA8339}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="47" Column="1" />
+      <File FileName="Program.cs" Line="38" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ManyMethods PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <FunctionBreakpoint line="0" column="0" function="guess" language="C#" />
+      <FunctionBreakpoint line="0" column="0" function="CatDog" language="C#" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

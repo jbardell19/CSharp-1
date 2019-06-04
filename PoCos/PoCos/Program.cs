@@ -16,7 +16,7 @@ namespace PoCos
         public string Gender { get; set; }
         public Int32 LicenseNumber { get; set; }
 
-        public DriverLicense(string FirstName, string LastName, string Gender, Int32 LicenseNumber)
+        public DriverLicense(string FirstName, string LastName, string Gender, string LicenseNumber)
         {
             FirstName = FName;
             LastName = LName;
