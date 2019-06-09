@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matt\\source\\repos\\ToDo Items\\ToDo Items\\ToDo Items.csproj": {}
+    "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\ToDo Items\\ToDo Items\\ToDo Items.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matt\\source\\repos\\ToDo Items\\ToDo Items\\ToDo Items.csproj": {
+    "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\ToDo Items\\ToDo Items\\ToDo Items.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matt\\source\\repos\\ToDo Items\\ToDo Items\\ToDo Items.csproj",
+        "projectUniqueName": "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\ToDo Items\\ToDo Items\\ToDo Items.csproj",
         "projectName": "ToDo Items",
-        "projectPath": "C:\\Users\\Matt\\source\\repos\\ToDo Items\\ToDo Items\\ToDo Items.csproj",
+        "projectPath": "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\ToDo Items\\ToDo Items\\ToDo Items.csproj",
         "packagesPath": "C:\\Users\\Matt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matt\\source\\repos\\ToDo Items\\ToDo Items\\obj\\",
+        "outputPath": "C:\\Users\\Matt\\Desktop\\CSharp\\CSharp\\ToDo Items\\ToDo Items\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
