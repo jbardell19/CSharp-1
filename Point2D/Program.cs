@@ -5,16 +5,20 @@ namespace Point2D
     
     public class Point2D
         {
-            public int X { get; set; }
-            public int Y { get; set; }
+        X = 0;
+        Y = 0;
+
         }
+
+        
 
         public Point2D(int x, int y)
         {
-            // your code here  
+            X = x;
+            Y = x;
         }
 
-        // your code here
+       // method
 
     }
 
