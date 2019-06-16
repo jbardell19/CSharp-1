@@ -10,7 +10,10 @@ namespace SuperHeroes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("test");
+            // calls a new nameslist then both functions within  Readline to keep the window open
+            var list = new NamesList();
+            list.AddPeople();
+            list.PrintAll();
             Console.ReadLine();
         }
         public class Person
@@ -27,12 +30,13 @@ namespace SuperHeroes
             {
                 return Name;
             }
+            //printed greeting that will be overridden by other classes.
             public virtual void PrintGreeting()
             {
                 Console.WriteLine("Hi, my name is {0}, you can call me {1}.", Name, NickName);
             }
         }
-
+        // Superhero class that inhertis from Person.
         public class SuperHero: Person
         {
             public override string Name { get => base.Name; set => base.Name = value; }
@@ -45,22 +49,37 @@ namespace SuperHeroes
             }
         }
 
-        public class Villain: Person
+        class Villain : Person
         {
-            public override string Name { get => base.Name; set => base.Name = value; }
             public string ArchNemesis { get; set; }
-
+            public string VillainName { get; set; }
             //Your Villain class should have a constructor that takes in the name and nemesis of the villain.And should pass null to the base constructor for the nickname.
-            public string Villain(string name, string anemesis) : base(Name, null)
+            public Villain(string vname, string anemesis) : base(vname, null)
             {
+                VillainName = vname;
                 ArchNemesis = anemesis;
             }
-
-
             
             public override void PrintGreeting()
             {
-                Console.WriteLine("I am {0}. Have you seen {1}?", Name, ArchNemesis);
+                Console.WriteLine("I am {0}. Have you seen {1}?", VillainName, ArchNemesis);
+            }
+        }
+        class NamesList
+        {
+            static List<Person> NewPeople = new List<Person>();
+            public void AddPeople()
+            {
+                NewPeople.Add(new Person("Franklin", "Frankie"));
+                NewPeople.Add(new SuperHero("IceMan", "Bobby Drake", "I make things get FROSTY FAST!"));
+                NewPeople.Add(new Villain("Mr. Sinister", "X-Men"));
+            }
+            public void PrintAll()
+            {
+                foreach (var person in NewPeople)
+                {
+                    person.PrintGreeting();
+                }
             }
         }
     }
