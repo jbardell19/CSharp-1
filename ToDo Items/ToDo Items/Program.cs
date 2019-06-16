@@ -12,7 +12,7 @@ namespace ToDo_Items
 {
     class Program
     {
-<<<<<<< HEAD
+
         // new Dictionary with a string as the first item and a List as the second item
             Dictionary<string, List<ToDoItems>> FullToDoList = new Dictionary<string, List<ToDoItems>>();
             static List<ToDoItems> ToDoList = new List<ToDoItems>();
@@ -33,7 +33,7 @@ namespace ToDo_Items
                     ToDoList.Add(new ToDoItems(Description, DueDate, Priority));
 
                 }
-=======
+
         //        In your main method, you should
         //Ask the user if they want to add an item, or if they are done.
         //        If the user wants to add an item,
@@ -52,7 +52,6 @@ namespace ToDo_Items
             while (answer != "quit")
             {
 
->>>>>>> 1065d8cbf6674cf61f710f1e7f59ba13bf30764e
             }
         }
     class ToDoItems
@@ -60,8 +59,6 @@ namespace ToDo_Items
         public string Description { get; set; }
         public string DueDate { get; set; }
         public string Priority { get; set; }
-<<<<<<< HEAD
-=======
 
         public ToDoItem(string desc, string duedate, string priority)
         {
@@ -70,7 +67,7 @@ namespace ToDo_Items
             Priority = priority;
         }
 
->>>>>>> 1065d8cbf6674cf61f710f1e7f59ba13bf30764e
+
 
         public ToDoItems(string description, string duedate, string priority)
         {
@@ -81,4 +78,5 @@ namespace ToDo_Items
     }
 
 }
+
 
