@@ -16,6 +16,7 @@ namespace SuperHeroes
             list.PrintAll();
             Console.ReadLine();
         }
+    }
         public class Person
         {
             public virtual string Name { get; set; }
@@ -82,5 +83,5 @@ namespace SuperHeroes
                 }
             }
         }
-    }
+    
 }
