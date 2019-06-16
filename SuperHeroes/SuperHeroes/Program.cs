@@ -15,7 +15,22 @@ namespace SuperHeroes
         }
         public class Person
         {
+            public string Name { get; set; }
+            public string NickName { get; set; }
 
+            public Person(string PersonName, string PersonNickName)
+            {
+                Name = PersonName;
+                NickName = PersonNickName;
+            }
+            public override string ToString()
+            {
+                return Name;
+            }
+            public virtual void PrintGreeting()
+            {
+                Console.WriteLine("Hi, my name is {0}, you can call me {1}.", Name, NickName);
+            }
         }
 
         public class SuperHero: Person
