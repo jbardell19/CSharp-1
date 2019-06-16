@@ -35,16 +35,23 @@ namespace SuperHeroes
 
         public class SuperHero: Person
         {
+            public override string Name { get => base.Name; set => base.Name = value; }
+            public string RealName { get; set; }
+            public string SuperPower { get; set; }
 
+            public SuperHero(string Name, string RealName, string SuperPower) : base(Name, null)
+            {
+                Console.WriteLine("I am {0}.  My SuperHero name is {1}. One of my powers is {2}", RealName, Name, SuperPower);
+            }
         }
 
         public class Villain: Person
         {
-            public override string Name { get; set; }
+            public override string Name { get => base.Name; set => base.Name = value; }
             public string ArchNemesis { get; set; }
 
             //Your Villain class should have a constructor that takes in the name and nemesis of the villain.And should pass null to the base constructor for the nickname.
-            public string Villian(string name, string anemesis) : base(name, null)
+            public string Villain(string name, string anemesis) : base(Name, null)
             {
                 ArchNemesis = anemesis;
             }
