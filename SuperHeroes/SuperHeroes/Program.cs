@@ -15,7 +15,7 @@ namespace SuperHeroes
         }
         public class Person
         {
-            public string Name { get; set; }
+            public virtual string Name { get; set; }
             public string NickName { get; set; }
 
             public Person(string PersonName, string PersonNickName)
@@ -40,7 +40,21 @@ namespace SuperHeroes
 
         public class Villain: Person
         {
+            public override string Name { get; set; }
+            public string ArchNemesis { get; set; }
 
+            //Your Villain class should have a constructor that takes in the name and nemesis of the villain.And should pass null to the base constructor for the nickname.
+            public string Villian(string name, string anemesis) : base(name, null)
+            {
+                ArchNemesis = anemesis;
+            }
+
+
+            
+            public override void PrintGreeting()
+            {
+                Console.WriteLine("I am {0}. Have you seen {1}?", Name, ArchNemesis);
+            }
         }
     }
 }
