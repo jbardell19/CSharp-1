@@ -73,7 +73,7 @@ public class Board
 
     public void MoveChecker(Checker checker, Position dest)
     {
-        // ..
+        // move the checker from one location to another
     }
 
 }
@@ -127,13 +127,23 @@ public class Game
 
     public bool IsCapture(Position src, Position dest)
     {
-        // ...
+        int rowDistance = Math.Abs(dest.Row - src.row) / 2;
+        int colDistance = Math.Abs(dest.col - src.col) / 2;
+
+
     }
 
     public Checker GetCaptureChecker(Position src, Position dest)
     {
-        // ..
-
+        if (IsCapture(player, src, dest)
+            {
+            int row_mid = (dest.row + src.Row) / 2;
+            int col_mid = (dest.col + src.col) / 2;
+            Position p = new Position(row_mid, col_mid);
+            Checker c = board.GetChecker(p);
+            return c;
+        }
+        return null;
     }
 
     public Position ProcessInput()
