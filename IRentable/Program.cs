@@ -1,64 +1,99 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace IRentable
-{
+
+
     class MainClass
     {
+        
+
         public static void Main(string[] args)
         {
-            List<string> Rental = new List<string>();
-            Rental.Add(new Boat());
-            Rental.Add(new House());
-            Rental.Add(new Car());
+        List<iRental> Rental = new List<iRental>();
+            Rental.Add(new Boat("touche"));
+            Rental.Add(new House("I am a house"));
+            Rental.Add(new Car("I am a car. VROOM"));
+
+        foreach (iRental rentable in Rental)
+        {
+            Console.WriteLine($"{rentable.GetType()}: {rentable.GetDescription()}");
+            Console.ReadLine();
         }
     }
-    public interface IRentable
+    }
+    public interface iRental
     {
         decimal GetDailyRate();
         string GetDescription();
     }
-    class Boat : IRentable
+    class Boat : iRental
     {
-        private decimal _hourlyRate = 15.00m;
-
+        
+        string Boat_Description { get; set; }
+        decimal hourlyRate = 15.00m;
+        string Type { get; set; }
+        public Boat(string type)
+        {
+            Type = type;
+        }
         public decimal GetDailyRate()
         {
-            return decimal.Round(_hourlyRate * 24, 2);
+            return decimal.Round(hourlyRate * 24, 2);
         }
         public string GetDescription()
         {
-            return Console.WriteLine("I am a boat. Toot Toot!");
+            Boat_Description = String.Format("Boat rental daily rate is : " + this.GetDailyRate());
+            return Boat_Description;
         }
-        
-    }
-    class House : IRentable
-    {
-        private decimal DailyRate = 250m;
 
+    }
+    class House : iRental
+    {
+        decimal WeeklyRate = 250m;
+        string House_Description { get; set; }
+
+        
+        string Type { get; set; }
+        public House(string type)
+        {
+            Type = type;
+        }
         public decimal GetDailyRate()
         {
-            private decimal WeeklyRate = DailyRate * 7m;
+            return Math.Round(WeeklyRate / 7, 2);
         }
-    }
-        public void GetDescription()
+
+        public string GetDescription()
         {
-            return Console.WriteLine("I am a house. I do not talk!");
+
+            House_Description = String.Format("House rental weekly is : " + WeeklyRate);
+            return House_Description;
         }
-        
+
     }
-    class Car : IRentable
+    class Car : iRental
     {
+        string Car_Description { get; set; }
         decimal HourlyRate = 100m;
-        
-        public void GetDailyRate()
+        decimal DailyRate;
+        string Type { get; set; }
+        public Car(string type)
         {
-            decimal DailyRate = HourlyRate * 24;
+            Type = type;
         }
-        public void GetDescription()
+        public decimal GetDailyRate()
         {
-            Console.WriteLine("I am a car. V to the ROOM!!");
-        }
-        
+        return HourlyRate;
     }
+        public string GetDescription()
+        {
+            Car_Description = String.Format("Car rental hourly is : " + HourlyRate);
+            return Car_Description;
+        }
+
+    }
+
 
