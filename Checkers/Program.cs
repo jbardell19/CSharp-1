@@ -14,12 +14,16 @@ namespace Checkers
             // the black disk and the white circle correctly
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+            Game newGame = new Game();
+            newGame.Start();
             ///TODO: Start the game
             ///How do we start the game?
             ///hint: What function should you call here?
             ///
             Game game = new Game();
             game.Start();
+
+            Console.ReadKey();
 
         }
     }
@@ -271,7 +275,32 @@ namespace Checkers
             ///
             //1. Get the checker at the source position:
             // hint: use GetChecker function
+            Checker srcChecker = board.GetChecker(from);
 
+            if (srcChecker == null)
+            {
+                Console.WriteLine("Invalid source position. Try again.");
+            }
+            else
+            {
+                if (IsLegalMove(srcChecker.Team, from, to))
+                {
+                    if (this.IsCapture(from, to))
+                    {
+                        Checker capturedChecker = this.GetCaptureChecker(from, to);
+                        board.RemoveChecker(capturedChecker);
+
+                    }
+                    board.MoveChecker(srcChecker, to);
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Move! Check your source and destinations");
+                }
+
+                
+            }
+            DrawBoard();
             //2. If there is no checker at the source position
             // notify the user of the error, then stop
 
