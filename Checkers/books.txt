@@ -1,0 +1,9 @@
+CREATE TABLE books(id int, title varchar(25), author varchar(25));
+INSERT INTO books(id, title, author) VALUES(1,'The Hobbit', 'J.R.R. Tolkien');
+INSERT INTO books(id, title, author) VALUES(2,'The Hobbit', 'J.R.R. Tolkien');
+INSERT INTO books(id, title, author) VALUES(3,'The Cat in the Hat', 'Dr. Seuss');
+SELECT * FROM books;
+SELECT * FROM books WHERE id = 1;
+SELECT title FROM books;
+UPDATE books SET id = 1 WHERE title = 'The Hobbit';
+sqlite> DELETE FROM books WHERE id=3;
