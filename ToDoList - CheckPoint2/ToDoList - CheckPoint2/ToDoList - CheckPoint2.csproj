@@ -55,6 +55,8 @@
     <Compile Include="ToDoItem.cs" />
     <Compile Include="ItemContext.cs" />
     <Compile Include="ItemRepository.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="ConsoleUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

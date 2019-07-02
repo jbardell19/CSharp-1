@@ -36,6 +36,8 @@ public void UpdateItem(int id, string newDescription, string newStatus, DateTime
 
 public void DeleteItem(int id)
 {
-    ToDoItem deleteItem = context.
+    TodoItem oldItem = context.ToDoItems.Where(item => item Id == id).FirstOrDefault();
+    context.ToDoItems.Remove(oldItem);
+    context.SaveChanges();
 }
 }
