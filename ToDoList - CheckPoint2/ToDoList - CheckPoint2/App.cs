@@ -21,22 +21,22 @@ namespace ToDoList___CheckPoint2
                     //L
                     if (action == "L")
                 {
-                    ConsoleUtils.PrintToDoItems();
+                    repo.GetToDoItem();
                 }
                 //A
                 if (action == "A")
                 {
-
+                    ConsoleUtils.
                 }
-                    //U
+                 //U
                     if(action == "U")
                 {
-
+                    ConsoleUtils.
                 }
                     //D
                     if(action == "D")
                 {
-
+                    
                 }
                     //Q
                     if(action =="Q")
