@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 namespace ToDoList___CheckPoint2
 {
     public class ItemRepository
@@ -20,7 +21,7 @@ namespace ToDoList___CheckPoint2
 public void AddItem(string description, string status, DateTime dueDate)
     {
     ToDoItem item = new ToDoItem(description, status, dueDate);
-    context.TodoItems.Add(item);
+    context.ToDoItems.Add(item);
     context.SaveChanges();
     }
 public void UpdateItem(int id, string newDescription, string newStatus, DateTime newDueDate)

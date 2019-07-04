@@ -23,10 +23,7 @@ namespace ToDoList___CheckPoint2
             Quit
         }
 
-        internal static void PrintToDoItems()
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public static string AskForItemInfo()
         {
