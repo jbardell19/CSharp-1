@@ -7,7 +7,7 @@ namespace ToDoList___CheckPoint2
         public string Description { get; set; }
         public string Status { get; set; }
         public DateTime DueDate { get; set; }
-        public ToDoItem(string Description, string Status, string DueDate)
+        public ToDoItem(string Description, string Status, DateTime DueDate)
         {
             this.Description = Description;
             this.Status = Status;
