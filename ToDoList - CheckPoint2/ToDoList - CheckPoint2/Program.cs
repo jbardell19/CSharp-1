@@ -11,7 +11,8 @@ namespace ToDoList___CheckPoint2
     {
         static void Main(string[] args)
         {
-            App.Start();
+            var app = new App();
+            app.Start();
         }
     }
 }
