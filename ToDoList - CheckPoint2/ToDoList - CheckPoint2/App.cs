@@ -14,7 +14,7 @@ namespace ToDoList___CheckPoint2
             repo = new ItemRepository();
             
         }
-        public void Go()
+        public void Start()
         {
             //display menu
             string action = ConsoleUtils.DisplayMenu();
