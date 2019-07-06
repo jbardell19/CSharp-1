@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ToDoList___CheckPoint2
 {
@@ -7,14 +8,14 @@ namespace ToDoList___CheckPoint2
     {
         public static string DisplayMenu()
         {
-            string menu = @"ToDo App.  Choose an option to continue: 
-        L to list item
-        A to add item
-        U to update item
-        D to delete item
-        Q to quit the program;
-        Choose your option: ";
-            string action = Console.ReadLine().ToUpper();
+            Console.WriteLine("ToDo App.  Choose an option to continue: ");
+            Console.WriteLine("L to list item");
+            Console.WriteLine("A to add item");
+            Console.WriteLine("U to update item");
+            Console.WriteLine("D to delete item");
+            Console.WriteLine("Q to quit the program;");
+            Console.WriteLine("Choose your option: "); 
+           string action = Console.ReadLine().ToUpper();
             return action;
         }
         public enum UserChoice{
@@ -49,6 +50,10 @@ namespace ToDoList___CheckPoint2
 
             //TODO: 
 
+        }
+        public static void Quit()
+        {
+            Application.Exit();
         }
         public ConsoleUtils()
         {

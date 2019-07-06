@@ -12,7 +12,7 @@ namespace ToDoList___CheckPoint2
         static void Main(string[] args)
 
         {
-         
+            ConsoleUtils.DisplayMenu();
            
         }
     }

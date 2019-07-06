@@ -17,38 +17,38 @@ namespace ToDoList___CheckPoint2
             //display menu
             string action = ConsoleUtils.DisplayMenu();
 
-            //Process user requests/actions
-            while (action != "Q")
+            ////Process user requests/actions
+            while (action != "q")
             {
-                    //L
-                    if (action == "L")
+                //l
+                if (action == "l")
                 {
                     repo.GetToDoItems();
                     List<ToDoItem> list = repo.GetToDoItems();
                     ConsoleUtils.PrintToDoItems(list);
                 }
-                //A
-                if (action == "A")
+                //a
+                if (action == "a")
                 {
-                    //ConsoleUtils.
+                    //consoleutils.
                 }
-                 //U
-                    if(action == "U")
+                //u
+                if (action == "u")
                 {
-                    //ConsoleUtils.
+                    //consoleutils.
                 }
-                    //D
-                    if(action == "D")
+                //d
+                if (action == "d")
                 {
-                    
+
                 }
-                    //Q
-                    if(action =="Q")
+                //q
+                if (action == "q")
                 {
 
                 }
             }
-            }
+        }
         }
     }
 
