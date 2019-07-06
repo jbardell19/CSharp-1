@@ -10,11 +10,8 @@ namespace ToDoList___CheckPoint2
     public class Program
     {
         static void Main(string[] args)
-
         {
-            
-           
+            App.Go();
         }
-       
     }
 }
