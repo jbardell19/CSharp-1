@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace ToDoList___CheckPoint2
 {
     public class App
@@ -21,17 +23,19 @@ namespace ToDoList___CheckPoint2
                     //L
                     if (action == "L")
                 {
-                    repo.GetToDoItem();
+                    repo.GetToDoItems();
+                    List<ToDoItem> list = repo.GetToDoItems();
+                    ConsoleUtils.PrintToDoItems(list);
                 }
                 //A
                 if (action == "A")
                 {
-                    ConsoleUtils.
+                    //ConsoleUtils.
                 }
                  //U
                     if(action == "U")
                 {
-                    ConsoleUtils.
+                    //ConsoleUtils.
                 }
                     //D
                     if(action == "D")

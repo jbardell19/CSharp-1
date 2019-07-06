@@ -19,7 +19,7 @@ namespace ToDoList___CheckPoint2
             IEnumerable<ToDoItem> list = context.ToDoItems;
             return list.ToList();
         }
-        public AddItem(string description, string status, DateTime dueDate)
+        public void AddItem(string description, string status, DateTime dueDate)
         {
             ToDoItem item = new ToDoItem(description, status, dueDate);
             context.ToDoItems.Add(item);
@@ -27,7 +27,7 @@ namespace ToDoList___CheckPoint2
         }
         public void UpdateItem(int id, string newDescription, string newStatus, DateTime newDueDate)
         {
-            TodoItem oldItem = context.ToDoItems.Where(item => item Id == id).FirstOrDefault();
+            ToDoItem oldItem = context.ToDoItems.Where(item => item.Id == id).FirstOrDefault();
 
             oldItem.Description = newDescription;
             oldItem.Status = newStatus;
@@ -38,7 +38,7 @@ namespace ToDoList___CheckPoint2
 
         public void DeleteItem(int id)
         {
-            TodoItem oldItem = context.ToDoItems.Where(item => item Id == id).FirstOrDefault();
+            ToDoItem oldItem = context.ToDoItems.Where(item => item.Id == id).FirstOrDefault();
             context.ToDoItems.Remove(oldItem);
             context.SaveChanges();
         }
