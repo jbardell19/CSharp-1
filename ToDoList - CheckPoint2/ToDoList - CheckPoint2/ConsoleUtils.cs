@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using static System.Net.Mime.MediaTypeNames;
+
 
 namespace ToDoList___CheckPoint2
 {
     public class ConsoleUtils
     {
+        // WriteLines to display a menu
         public static string DisplayMenu()
         {
             Console.WriteLine("ToDo App.  Choose an option to continue: ");
@@ -18,22 +19,14 @@ namespace ToDoList___CheckPoint2
            string action = Console.ReadLine().ToUpper();
             return action;
         }
-        public enum UserChoice{
-            ListItem,
-            AddItem,
-            UpdateItem,
-            DeleteItem,
-            Quit
-        }
-
-        
-
+        // Requests item information and returns it
         public static string AskForItemInfo()
         {
             Console.WriteLine("Please enter the item for the list: ");
             string UserItemInfo = Console.ReadLine();
             return UserItemInfo;
         }
+        // Prints the items
         public static void PrintToDoItems(List<ToDoItem> list)
         {
             foreach(ToDoItem item in list)
@@ -41,6 +34,7 @@ namespace ToDoList___CheckPoint2
                 Console.WriteLine($"{item.Id} - {item.Description} - {item.Status} - {item.DueDate}");
             }
         }
+        //Asks user for the list item ID and returns it
         public static int GetItemId()
         {
             Console.WriteLine("Enter the ID of the item: ");
@@ -51,12 +45,8 @@ namespace ToDoList___CheckPoint2
             //TODO: 
 
         }
-        public static void Quit()
-        {
-            Application.Exit();
+        
         }
-        public ConsoleUtils()
-        {
-        }
+        
     }
-}
+
